@@ -1,0 +1,136 @@
+.formDiv {
+  gap: 19px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+}
+form {
+  outline: 1px solid var(--grey6);
+
+  height: 351px;
+  width: 363px;
+
+  left: 258px;
+  top: 127px;
+
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.divInputText {
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 12px;
+}
+label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.divInputText > label {
+  margin-right: 88%;
+}
+.divInputText > input {
+  height: 52.80000305175781px;
+  width: 100%;
+
+  border-radius: 8px;
+  padding: 0px 16px 0px 16px;
+  border: none;
+  background-color: var(--grey2);
+}
+.divInputText1 > label {
+  margin-right: 88%;
+}
+.divInputText1 > input {
+  height: 52.80000305175781px;
+  width: 100%;
+
+  border-radius: 8px;
+  padding: 0px 16px 0px 16px;
+  border: 1px solid red;
+  background-color: var(--grey2);
+}
+.formDiv > button {
+  height: 48px;
+  width: 100%;
+  left: 24.5px;
+  top: 265px;
+  border-radius: 8px;
+  padding: 13px 20px 13px 20px;
+  color: var(--white);
+  background-color: var(--brand);
+  border: none;
+  cursor: pointer;
+}
+.formDiv > button:hover {
+  background-color: var(--brand2);
+}
+.divInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.1rem;
+}
+.divInputNumber > input {
+  height: 48px;
+  width: 94.5%;
+  margin-top: 12px;
+  border-radius: 8px;
+  padding: 0px 16px 0px 16px;
+  justify: space-between;
+  border: none;
+  background-color: var(--grey2);
+}
+.divInput > div {
+  width: 50%;
+}
+.divSelect {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.7rem;
+  gap: 12px;
+}
+.divSelect > select {
+  border: none;
+  background-color: var(--grey2);
+  height: 48px;
+  width: 150px;
+  left: 0px;
+  top: 31px;
+  border-radius: 8px;
+  padding: 0px 16px 0px 16px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.imfo {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.liRgistrado {
+  border-left: 5px solid var(--green);
+}
+.imfo > h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.interface {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

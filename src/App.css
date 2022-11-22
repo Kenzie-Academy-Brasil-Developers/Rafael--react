@@ -1,0 +1,18 @@
+:root {
+  --brand: #fd377e;
+  --brand2: #e34981;
+
+  --white: #fff;
+  --grey1: rgba(0, 0, 0, 0.9);
+  --grey2: #f8f9fa;
+  --grey: #868e96;
+  --grey3: #343a40;
+  --grey4: #212529;
+  --grey5: #f8f9fa;
+  --grey6: #e9ecef;
+  --green: #03b898;
+}
+body {
+  font-family: "Nunito", sem serifa;
+  font-family: "Nunito Sans", sem serifa;
+}

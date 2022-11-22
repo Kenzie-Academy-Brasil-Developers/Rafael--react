@@ -1,0 +1,23 @@
+body {
+  background-color: var(--white);
+}
+.divPrincipal {
+  width: 100%;
+}
+.divFlex {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 5rem;
+  width: 70%;
+
+  margin-top: 3rem;
+  margin-left: 15%;
+}
+.App {
+  align-items: none;
+}
+.divForm {
+  display: flex;
+  flex-direction: column;
+}
