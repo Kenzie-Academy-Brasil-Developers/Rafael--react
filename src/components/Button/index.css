@@ -12,3 +12,64 @@
 .buttonIniciar:hover {
   background-color: var(--brand2);
 }
+.buttonForm {
+  height: 48px;
+  width: 100%;
+  left: 24.5px;
+  top: 265px;
+  border-radius: 8px;
+  padding: 13px 20px 13px 20px;
+  color: var(--white);
+  background-color: var(--brand);
+  border: none;
+  cursor: pointer;
+}
+.buttonForm:hover {
+  background-color: var(--brand2);
+}
+.buttonHeader {
+  height: 40px;
+  width: 64px;
+
+  border-radius: 8px;
+  border: none;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+.buttonHeader:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+.generico {
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.generico:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+.todos {
+  background-color: var(--brand);
+  color: var(--white);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.todos:hover {
+  background-color: var(--brand2);
+}
+.delet {
+  background-color: var(--grey6);
+  border: none;
+  border-radius: 3px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+.delet > img:hover {
+  opacity: 80%;
+}

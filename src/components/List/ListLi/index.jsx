@@ -1,4 +1,5 @@
 import IMG from "../../../img/trash.svg";
+import { Button } from "../../Button";
 export function ListLi({ filtrador, valor, description, i, estado }) {
   function rednderFiltrados(event) {
     filtrador(Number(event.target.id));
@@ -26,13 +27,12 @@ export function ListLi({ filtrador, valor, description, i, estado }) {
         </div>
         <div className="priceDelet">
           <span>R$ {valor}</span>
-          <button
+          <Button
             id={i}
-            onClick={(event) => rednderFiltrados(event)}
+            callBack={(event) => rednderFiltrados(event)}
             className="delet"
-          >
-            <img id={i} src={IMG} alt="apagar" />
-          </button>
+            Children={<img id={i} src={IMG} alt="apagar" />}
+          />
         </div>
       </li>
     </div>

@@ -9,7 +9,11 @@ export function Intro({ callBack }) {
         <img src={imgLog} />
         <h2>Centralize o controle das suas finanças</h2>
         <span>de forma rápida e segura</span>
-        <Button callBack={callBack}></Button>
+        <Button
+          Children={"Iniciar"}
+          callBack={callBack}
+          className={"buttonIniciar"}
+        ></Button>
       </div>
       <div className="introducionImg">
         <img src={ilustraçao} alt="" />

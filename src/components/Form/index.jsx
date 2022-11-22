@@ -1,5 +1,9 @@
 import "./style.css";
 import { useState } from "react";
+import { Select } from "../Select";
+import { Input } from "../Input";
+import { Label } from "../Label";
+import { Button } from "../Button";
 
 export const Form = ({ setRegistros, registros, contador, setContador }) => {
   const [description, setDesc] = useState("");
@@ -26,36 +30,35 @@ export const Form = ({ setRegistros, registros, contador, setContador }) => {
         <form onSubmit={hendleSubmit}>
           <div className="formDiv">
             <div className="divInputText">
-              <label className="label">Descrição</label>
-              <input
-                placeholder="Digite aqui sua descrição"
-                type="text"
-                onChange={(event) => setDesc(event.target.value)}
+              <Label className={"labelDescription"} Children={"Descrição"} />
+              <Input
+                type={"text"}
+                placeholder={"Digite aqui sua descrição"}
+                set={setDesc}
+                className={"inputText"}
               />
             </div>
             <div className="divInput">
               <div className="divInputNumber">
-                <label>Valor</label>
-                <input
-                  placeholder="1"
-                  type="number"
-                  onChange={(event) => setValue(event.target.value)}
+                <Label className={"labelNumber"} Children={"Valor"} />
+                <Input
+                  type={"number"}
+                  placeholder={"0"}
+                  className={"inputNumber"}
+                  set={setValue}
+                  min={"0"}
                 />
               </div>
               <div className="divSelect">
                 <label>Tipo de valor</label>
-
-                <select
-                  onChange={(event) => setEstado(event.target.value)}
-                  name="select"
-                  id=""
-                >
-                  <option value="Entrada">Entrada</option>
-                  <option value="saida">Saída</option>
-                </select>
+                <Select setEstado={setEstado} />
               </div>
             </div>
-            <button type="submit">Inserir valor</button>
+            <Button
+              className={"buttonForm"}
+              Children={"Inserir valor"}
+              type="submit"
+            />
           </div>
         </form>
       </div>

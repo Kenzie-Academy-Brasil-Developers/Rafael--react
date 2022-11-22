@@ -13,6 +13,7 @@
   --green: #03b898;
 }
 body {
-  font-family: "Nunito", sem serifa;
-  font-family: "Nunito Sans", sem serifa;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  margin: 0;
 }

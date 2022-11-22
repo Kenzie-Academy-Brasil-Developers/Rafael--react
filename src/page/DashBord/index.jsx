@@ -13,15 +13,6 @@ export function DashBord({ callBack }) {
   const [contador, setContador] = useState(0);
   const [filtro, setFiltro] = useState("todos");
 
-  const total = registros.reduce((acc, act) => {
-    const numero = act.valor;
-    if (act.estado === "saida") {
-      return acc - Number(numero);
-    } else {
-      return acc + Number(numero);
-    }
-  }, 0);
-
   function filtrador(index) {
     const newArr = registros.filter(
       (element) => element.contador !== registros[index].contador
@@ -32,6 +23,14 @@ export function DashBord({ callBack }) {
   const arr = registros.filter((element) =>
     filtro === "todos" ? true : element.estado === filtro
   );
+  const total = arr.reduce((acc, act) => {
+    const numero = act.valor;
+    if (act.estado === "saida") {
+      return acc - Number(numero);
+    } else {
+      return acc + Number(numero);
+    }
+  }, 0);
   return (
     <div className="divPrincipal">
       <Heard callBack={callBack} />

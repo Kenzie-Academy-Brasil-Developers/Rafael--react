@@ -1,21 +1,28 @@
 import "./style.css";
 import { ListLi } from "./ListLi";
 import { Vazio } from "./Vazio";
+import { Button } from "../Button";
 export function List({ registros, filtrador, setFiltro }) {
   return (
     <div className="divListFilter">
       <div className="divFiltro">
-        <h3 className="subTitle-h3">Resumo financeiro</h3>
+        <h3 className="subTitle-h3">Resumo Financeiro</h3>
         <div>
-          <button onClick={() => setFiltro("todos")} className="todos">
-            Todos
-          </button>
-          <button className="generico" onClick={() => setFiltro("Entrada")}>
-            Entradas
-          </button>
-          <button className="generico" onClick={() => setFiltro("saida")}>
-            Despesas
-          </button>
+          <Button
+            Children={"Todos"}
+            callBack={() => setFiltro("todos")}
+            className={"todos"}
+          />
+          <Button
+            Children={"Entradas"}
+            className={"generico"}
+            callBack={() => setFiltro("Entrada")}
+          />
+          <Button
+            Children={"Despesas"}
+            className={"generico"}
+            callBack={() => setFiltro("saida")}
+          />
         </div>
       </div>
       <ul className="ulRegistros">
