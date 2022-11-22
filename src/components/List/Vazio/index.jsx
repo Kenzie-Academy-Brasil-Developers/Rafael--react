@@ -1,6 +1,5 @@
 import "./style.css";
 export function Vazio() {
-  console.log("foi porra");
   return (
     <div>
       <h2>Você ainda não possui nenhum lançamento</h2>
