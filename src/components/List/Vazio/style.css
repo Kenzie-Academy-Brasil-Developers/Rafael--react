@@ -2,10 +2,10 @@
   list-style: none;
   margin-bottom: 1rem;
 
-  background-color: var(--grey5);
+  background-color: var(--grey3);
 
   border-radius: 8px;
-  border-left: 5px solid var(--grey6);
+  border-left: 5px solid var(--green);
 
   display: flex;
   flex-direction: column;
@@ -22,18 +22,19 @@
 }
 .listLiVazio:hover {
   box-shadow: 0px 4px 32px -12px #00000040;
+  background-color: var(--grey4);
 }
 
 .div1 {
   height: 15px;
   width: 100%;
-  background-color: var(--grey6);
+  background-color: var(--grey);
   margin-left: -30px;
 }
 .div2 {
   width: 60%;
   height: 15px;
-  background-color: var(--grey6);
+  background-color: var(--grey);
   margin-left: -30px;
   margin-top: 10px;
 }

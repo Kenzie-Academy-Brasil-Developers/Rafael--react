@@ -5,6 +5,8 @@ header {
   box-shadow: 0px 4px 32px -12px #00000040;
   display: flex;
   align-items: center;
+
+  background-color: var(--grey3);
 }
 .headerDiv {
   display: flex;
@@ -18,4 +20,20 @@ header {
 .App {
   justify-content: none;
   align-items: flex-start;
+
+  background-color: var(--grey4);
+
+  color: var(--white);
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}
+button {
+  background-color: var(--grey);
+  color: var(--white);
+}
+button:hover {
+  opacity: 60%;
 }

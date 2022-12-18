@@ -1,4 +1,4 @@
-import imgLog from "./Nu Kenzie.png";
+import imgLog from "../../img/Nu Kenzie.svg";
 import "./index.css";
 import ilustraçao from "../../img/illustration.svg";
 import { Button } from "../Button";

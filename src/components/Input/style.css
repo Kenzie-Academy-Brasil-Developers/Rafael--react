@@ -4,8 +4,9 @@
 
   border-radius: 8px;
   padding: 0px 16px 0px 16px;
-  border: none;
-  background-color: var(--grey2);
+  border: 1px solid var(--grey5);
+  background-color: var(--grey3);
+  color: var(--white);
 }
 .inputNumber {
   height: 48px;
@@ -13,8 +14,9 @@
   margin-top: 12px;
   border-radius: 8px;
   padding: 0px 16px 0px 16px;
-  border: none;
-  background-color: var(--grey2);
+  border: 1px solid var(--grey5);
+  background-color: var(--grey3);
+  color: var(--white);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

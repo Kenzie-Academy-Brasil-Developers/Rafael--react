@@ -26,7 +26,7 @@
   list-style: none;
   margin-bottom: 1rem;
 
-  background-color: var(--grey5);
+  background-color: var(--grey3);
 
   border-radius: 8px;
   border-left: 5px solid var(--green);
@@ -39,7 +39,7 @@
   min-height: 100px;
 }
 .liRgistrado:hover {
-  background-color: var(--white);
+  background-color: var(--grey);
 }
 .liRgistrado1 {
   list-style: none;
@@ -83,5 +83,25 @@
   margin-right: 1rem;
 }
 li:hover {
+  background-color: var(--white);
+}
+.delet {
+  background-color: var(--grey);
+}
+.priceDelet > button {
+  display: flex;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background: none;
+}
+.svg {
+  width: 20px;
+
+  height: 20px;
+}
+.img_delet {
   background-color: var(--white);
 }

@@ -1,4 +1,4 @@
-import IMG from "../../../img/trash.svg";
+import { AiFillDelete } from "react-icons/ai";
 import { Button } from "../../Button";
 export function ListLi({ filtrador, valor, description, i, estado }) {
   function rednderFiltrados(event) {
@@ -31,7 +31,7 @@ export function ListLi({ filtrador, valor, description, i, estado }) {
             id={i}
             callBack={(event) => rednderFiltrados(event)}
             className="delet"
-            Children={<img id={i} src={IMG} alt="apagar" />}
+            Children={<AiFillDelete className="svg" />}
           />
         </div>
       </li>
